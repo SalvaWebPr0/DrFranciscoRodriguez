@@ -3,7 +3,7 @@ import React from 'react'
 import Link from 'next/link'
 import { useRouter } from 'next/navigation'
 import { RxHamburgerMenu } from 'react-icons/rx'
-import Header from './Header'
+import Header from './header'
 import Image from 'next/image'
 
 const CustomLink = ({href, title, className=""}) => {
