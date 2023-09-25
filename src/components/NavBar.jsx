@@ -3,7 +3,6 @@ import React from 'react'
 import Link from 'next/link'
 import { useRouter } from 'next/navigation'
 import { RxHamburgerMenu } from 'react-icons/rx'
-import HeaderFirst from './header'
 import HeaderMain from './Header'
 import Image from 'next/image'
 

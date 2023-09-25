@@ -1,10 +1,6 @@
 import Link from "next/link";
 import React from "react";
 import Image from "next/image";
-import Slider from "react-slick";
-import NavBar from "@/components/NavBar";
-import Header from "@/components/header";
-import FooterComponent from "@/components/footer-component";
 import "@/app/css/globals.css"
 import { motion } from "framer-motion";
 import PageTransition from "@/components/PageTransition";
