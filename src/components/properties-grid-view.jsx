@@ -3,6 +3,8 @@ import { Dropdown, Menu } from "antd";
 import { DownOutlined } from "@ant-design/icons";
 import NavigationRight from "./navigation-right";
 import ServiceCard from "./service-card";
+import Image from "next/image";
+import Link from "next/link";
 
 const PropertiesGridView = () => {
   return (
@@ -33,64 +35,64 @@ const PropertiesGridView = () => {
           <div className="flex flex-row items-end justify-start gap-[16px]">
             <div className="flex flex-row items-start justify-start gap-[8px]">
               <button className="cursor-pointer [border:none] p-0 bg-[transparent] relative w-6 h-6">
-                <img
+                <Image width={30} height={30}
                   className="absolute h-full w-full top-[0%] right-[0%] bottom-[0%] left-[0%] max-w-full overflow-hidden max-h-full object-cover"
                   alt=""
                   src="/undefined11.png"
                 />
-                <img
+                <Image width={30} height={30}
                   className="absolute h-[6.25%] w-[56.25%] top-[21.88%] right-[12.5%] bottom-[71.88%] left-[31.25%] max-w-full overflow-hidden max-h-full object-cover"
                   alt=""
                   src="/undefined12.png"
                 />
-                <img
+                <Image width={30} height={30}
                   className="absolute h-[6.25%] w-[56.25%] top-[46.88%] right-[12.5%] bottom-[46.88%] left-[31.25%] max-w-full overflow-hidden max-h-full object-cover"
                   alt=""
                   src="/undefined12.png"
                 />
-                <img
+                <Image width={30} height={30}
                   className="absolute h-[6.25%] w-[56.25%] top-[71.88%] right-[12.5%] bottom-[21.88%] left-[31.25%] max-w-full overflow-hidden max-h-full object-cover"
                   alt=""
                   src="/undefined12.png"
                 />
-                <img
+                <Image width={30} height={30}
                   className="absolute h-[9.38%] w-[9.38%] top-[20.31%] right-[78.13%] bottom-[70.31%] left-[12.5%] max-w-full overflow-hidden max-h-full object-cover"
                   alt=""
                   src="/undefined13.png"
                 />
-                <img
+                <Image width={30} height={30}
                   className="absolute h-[9.38%] w-[9.38%] top-[45.31%] right-[78.13%] bottom-[45.31%] left-[12.5%] max-w-full overflow-hidden max-h-full object-cover"
                   alt=""
                   src="/undefined13.png"
                 />
-                <img
+                <Image width={30} height={30}
                   className="absolute h-[9.38%] w-[9.38%] top-[70.31%] right-[78.13%] bottom-[20.31%] left-[12.5%] max-w-full overflow-hidden max-h-full object-cover"
                   alt=""
                   src="/undefined13.png"
                 />
               </button>
               <button className="cursor-pointer [border:none] p-0 bg-[transparent] relative w-6 h-6">
-                <img
+                <Image width={30} height={30}
                   className="absolute h-full w-full top-[0%] right-[0%] bottom-[0%] left-[0%] max-w-full overflow-hidden max-h-full object-cover"
                   alt=""
                   src="/undefined14.png"
                 />
-                <img
+                <Image width={30} height={30}
                   className="absolute h-[31.25%] w-[31.25%] top-[15.63%] right-[53.13%] bottom-[53.13%] left-[15.63%] max-w-full overflow-hidden max-h-full object-cover"
                   alt=""
                   src="/undefined15.png"
                 />
-                <img
+                <Image width={30} height={30}
                   className="absolute h-[31.25%] w-[31.25%] top-[15.63%] right-[15.63%] bottom-[53.13%] left-[53.13%] max-w-full overflow-hidden max-h-full object-cover"
                   alt=""
                   src="/undefined15.png"
                 />
-                <img
+                <Image width={30} height={30}
                   className="absolute h-[31.25%] w-[31.25%] top-[53.13%] right-[53.13%] bottom-[15.63%] left-[15.63%] max-w-full overflow-hidden max-h-full object-cover"
                   alt=""
                   src="/undefined15.png"
                 />
-                <img
+                <Image width={30} height={30}
                   className="absolute h-[31.25%] w-[31.25%] top-[53.13%] right-[15.63%] bottom-[15.63%] left-[53.13%] max-w-full overflow-hidden max-h-full object-cover"
                   alt=""
                   src="/undefined15.png"
@@ -108,19 +110,19 @@ const PropertiesGridView = () => {
                     { value: "Inyectables" },
                   ].map((option, index) => (
                     <Menu.Item key={index}>
-                      <a onClick={(e) => e.preventDefault()}>
+                      <Link onClick={(e) => e.preventDefault()}>
                         {option.value || ""}
-                      </a>
+                      </Link>
                     </Menu.Item>
                   ))}
                 </Menu>
               }
               trigger={["hover"]}
             >
-              <a onClick={(e) => e.preventDefault()}>
+              <Link onClick={(e) => e.preventDefault()}>
                 {`Todos `}
                 <DownOutlined />
-              </a>
+              </Link>
             </Dropdown>
           </div>
         </div>
@@ -320,7 +322,7 @@ const PropertiesGridView = () => {
         </div>
         <div className="flex flex-row items-end justify-center gap-[8px] text-center text-sendblack">
           <div className="rounded bg-primary-50 flex flex-row p-2.5 items-start justify-start">
-            <img
+            <Image width={30} height={30}
               className="relative w-6 h-6 object-cover"
               alt=""
               src="/undefined34.png"
@@ -352,7 +354,7 @@ const PropertiesGridView = () => {
             </div>
           </div>
           <div className="rounded [background:radial-gradient(50%_50%_at_50%_50%,_#8f742b,_#c1a047_21.35%,_#ebc86c_47.4%,_#a0853a_75%,_#cdaa4c)] flex flex-row p-2.5 items-start justify-start">
-            <img
+            <Image width={30} height={30}
               className="relative w-6 h-6 object-cover"
               alt=""
               src="/undefined35.png"
@@ -365,7 +367,7 @@ const PropertiesGridView = () => {
           <footer className="flex-1 flex flex-row items-start justify-between text-left text-5xl text-whitesmoke-300 font-body-regular-400 md:flex-col md:gap-[50px] sm:flex-col sm:gap-[50px] sm:flex-[unset] sm:self-stretch">
             <div className="w-[312px] h-[300px] flex flex-col items-start justify-start gap-[20px] text-base">
               <div className="flex flex-row items-center justify-center">
-                <img
+                <Image width={30} height={30}
                   className="max-w-full overflow-hidden max-h-full object-cover"
                   alt=""
                   src="/undefined36.png"
@@ -386,39 +388,39 @@ const PropertiesGridView = () => {
                   </span>
                 </div>
                 <div className="relative leading-[24px] text-[inherit]">
-                  <a
+                  <Link
                     className="text-[inherit]"
                     href="mailto:info@mysite.com"
                     target="_blank"
                   >
                     drfranciscocirugiaplastica@gmail.com
-                  </a>
+                  </Link>
                 </div>
               </div>
               <div className="w-[304px] h-28 flex flex-row items-center justify-between">
                 <div className="rounded bg-ghostwhite flex flex-col p-3.5 items-center justify-center border-[1px] border-solid border-gray-white">
-                  <img
+                  <Image width={30} height={30}
                     className="relative w-5 h-[21.67px] object-cover"
                     alt=""
                     src="/undefined37.png"
                   />
                 </div>
                 <div className="rounded bg-ghostwhite flex flex-col p-3.5 items-center justify-center border-[1px] border-solid border-gray-white">
-                  <img
+                  <Image width={30} height={30}
                     className="relative w-5 h-5 overflow-hidden shrink-0 object-cover"
                     alt=""
                     src="/undefined38.png"
                   />
                 </div>
                 <div className="rounded bg-ghostwhite flex flex-col p-3.5 items-center justify-center border-[1px] border-solid border-gray-white">
-                  <img
+                  <Image width={30} height={30}
                     className="relative w-5 h-5 overflow-hidden shrink-0 object-cover"
                     alt=""
                     src="/undefined39.png"
                   />
                 </div>
                 <div className="rounded bg-ghostwhite flex flex-col p-3.5 items-center justify-center border-[1px] border-solid border-gray-white">
-                  <img
+                  <Image width={30} height={30}
                     className="relative w-5 h-5 overflow-hidden shrink-0 object-cover"
                     alt=""
                     src="/undefined40.png"

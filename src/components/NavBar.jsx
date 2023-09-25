@@ -3,7 +3,8 @@ import React from 'react'
 import Link from 'next/link'
 import { useRouter } from 'next/navigation'
 import { RxHamburgerMenu } from 'react-icons/rx'
-import Header from './header'
+import Header from './Header'
+import Image from 'next/image'
 
 const CustomLink = ({href, title, className=""}) => {
     const router = useRouter();
@@ -25,7 +26,8 @@ const NavBar = () => {
             <CustomLink href="/servicios" title={`SERVICIOS`} className='text-gray-white no-underline'/>
             <CustomLink href="/faq" title={`PREGUNTAS`} className='text-gray-white no-underline'/>
         </nav>
-        <img
+        <Image 
+          width={200} height={30}
           className="relative md:absolute md:left-5 w-[178px] h-[69px] object-cover"
           alt=""
           src="/salvawebprolong-logoalone50p-1.png"

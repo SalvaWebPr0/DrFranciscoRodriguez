@@ -8,13 +8,7 @@ const FooterComponent = () => {
     <section className="self-stretch max-w-full bg-sendblack  flex flex-col py-[81px] box-border items-center justify-start [text-decoration:none]">
       <div className="w-[80%] sm:w-[80%] m-auto self-stretch flex flex-row p-[60px] md:p-[30px] items-start justify-start md:self-stretch md:w-auto md:flex-row md:gap-[0px] sm:flex-col">
         <footer className="flex-1 items-start ">
-           <div className="flex flex-row items-start justify-start">
-              {/* <img
-                className=" max-w-[50%] md:w-[50%] max-h-full object-cover"
-                alt=""
-                src="/undefined6.png"
-              /> */}
-            </div>
+          
           <div className="flex-1 flex flex-row items-start justify-between text-left text-5xl text-whitesmoke-300 font-body-regular-400 md:flex-col md:gap-[50px] sm:flex-col sm:gap-[50px] sm:flex-[unset] sm:self-stretch">
             {/* Contact Column */}
             <div className="w-[25%] md:w-full pr-5 flex flex-col items-start justify-start gap-[20px] text-base">

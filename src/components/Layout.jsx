@@ -2,7 +2,7 @@ import React from 'react'
 import NavBar from './NavBar'
 import FooterComponent from './footer-component'
 import "@/app/css/globals.css"
-import Header from './header'
+import Header from './Header'
 
 const Layout = ({children, className=""}) => {
   return (

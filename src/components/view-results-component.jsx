@@ -2,6 +2,7 @@
 import ReactCompareImage from 'react-compare-image';
 import AnimatedText from './AnimatedText';
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 
 const ViewResultsComponent = () => {
   return (
@@ -38,7 +39,7 @@ const ViewResultsComponent = () => {
             <p className="flex-row m-0 a text-15xl tracking-[0.12em] leading-[123%] font-medium font-barlow-condensed text-gray-white text-center flex ">
               Ver galeria 
             </p>
-            <img
+            <Image width={20} height={20}
               className="flex-row flex h-[22.09px] object-cover"
               alt=""
               src="/arrow-51.png"
@@ -64,7 +65,7 @@ const ViewResultsComponent = () => {
               <h4 className="m-0 absolute top-[14px] left-[40.81px] text-15xl tracking-[0.12em] leading-[123%] font-medium font-barlow-condensed text-gray-white text-center inline-block ">
                 Ver galeria 
               </h4>
-              <img
+              <Image width={20} height={20}
                 className="absolute top-[26.45px] left-[343.97px] w-[34.5px] h-[22.09px] object-cover"
                 alt=""
                 src="/arrow-51.png"

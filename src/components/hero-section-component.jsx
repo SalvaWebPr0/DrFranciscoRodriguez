@@ -2,6 +2,7 @@
 import { useRef, useEffect } from "react";
 import AnimatedText from "./AnimatedText";
 import { motion, useInView, useMotionValue, useSpring } from "framer-motion";
+import Image from "next/image";
 
 const imagevariants = {
   initial:{
@@ -109,7 +110,7 @@ const HeroSectionComponent = () => {
               transition={{duration: 0.7}} 
               className="w-[33%] flex flex-col items-end justify-center relative gap-[67px] lg:hidden" >
               <motion.div className="flex flex-row items-center justify-between z-[0]" variants={listvarinats1} >
-                <img
+                <Image width={30} height={30}
                   className="pr-5 relative w-[28.5px] h-[22.09px] object-cover r-0 float-right"
                   alt=""
                   src="/arrow-9.png"
@@ -119,7 +120,7 @@ const HeroSectionComponent = () => {
                 </div>
               </motion.div>
               <motion.div className=" flex flex-row items-center justify-between z-[1]" variants={listvarinats2} >
-                <img
+                <Image width={30} height={30}
                   className="pr-5 relative w-[28.5px] h-[22.09px] object-cover"
                   alt="Cirugia Plastica"
                   src="/arrow-9.png"
@@ -130,7 +131,7 @@ const HeroSectionComponent = () => {
                 </div>
               </motion.div>
               <motion.div className=" flex flex-row items-center justify-between z-[2]" variants={listvarinats3} >
-                <img
+                <Image width={30} height={30}
                   className="pr-5 relative w-[28.5px] h-[22.09px] object-cover"
                   alt=""
                   src="/arrow-9.png"
@@ -144,10 +145,12 @@ const HeroSectionComponent = () => {
 
             <motion.div 
             className="w-[33%] md:w-[50%] sm:w-full shrink-0 flex flex-col items-center justify-start relative" variants={imagevariants} >
-              <motion.img
+              <motion.div 
                 initial={{y:30, opacity:0 }} 
                 whileInView={{y:0, opacity: 1 }} 
                 transition={{duration: 1.2}} 
+              ></motion.div>
+              <Image width={1000} height={30} quality={100}
                 className="self-stretch my-0 mx-[!important] bottom-[0px] left-[60px] rounded-3xs max-w-full h-[664px] shrink-0 object-cover z-[0]"
                 alt=""
                 src="/highqltysalvadornoback-1.png"
@@ -160,7 +163,7 @@ const HeroSectionComponent = () => {
               transition={{duration: 0.7}} 
               className="w-[33%] md:w-[50%] h-[238px] flex flex-col pt-[42px] pl-10 sm:pl-0 pb-0 box-border items-start justify-end md:justify-center md:items-center relative gap-[11px] text-center text-13xl "  >
               
-              <img
+              <Image width={200} height={30}
                 className="relative w-[100$] md:m-auto h-8 o z-[1]"
                 alt=""
                 src="/stars.png"

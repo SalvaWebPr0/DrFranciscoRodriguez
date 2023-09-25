@@ -3,6 +3,8 @@
 import { useEffect, useRef } from "react";
 import { motion, useInView, useMotionValue, useSpring } from "framer-motion";
 import AnimatedText from "./AnimatedText";
+import Image from "next/image";
+import Link from "next/link";
 
 const AnimatedNumbers= ({ value }) => {
   const ref =useRef(null)
@@ -66,13 +68,13 @@ const WhyUsComponent = () => {
             </h3>
           </div>
 
-          <a href="/contacto" className="w-full mt-11 flex flex-row items-start justify-start gap-[45px] text-silver-200">
+          <Link href="/contacto" className="w-full mt-11 flex flex-row items-start justify-start gap-[45px] text-silver-200">
               <button className="cursor-pointer [border:none] p-0 bg-[transparent] relative rounded-3xs bg-black w-[240px] h-[74px] z-[0] ">
               <h4 className="my-0 mx-[!important] absolute top-[14.65px] left-[32px] text-11xl tracking-[0.08em] leading-[123%] font-medium font-barlow-condensed text-gray-white text-center z-[1]">
                 Contratame
               </h4>
             </button>
-          </a>
+          </Link>
         </div>
 
        
@@ -83,18 +85,12 @@ const WhyUsComponent = () => {
         whileInView={{y:0, opacity: 1 }} 
         transition={{duration: 0.7}} 
         className=" w-[40%] md:min-w-[100%] max-w-[100%] md:mt-[150px] sm:mt-0 flex flex-col items-center justify-center relative m-auto">
-          <img
-            className="max-w-[100%]  relative my-0 shrink-0  z-[1] top-[15px]"
+          <Image width={500} height={650} quality={100}
+            className="max-w-[100%] sm:max-h-[400px] relative my-0 z-[1] lg:top-[15px]"
             alt="Dr Francisco Rodriguez"
             src="/frame-79.png"
           />
-        {/* <div className=" overflow-hidden my-0  left-[0px] rounded-[200%] [background:radial-gradient(50%_50%_at_50%_50%,_#8f742b,_#c1a047_21.35%,_#ebc86c_47.4%,_#a0853a_75%,_#cdaa4c)] z-[0]" >
-          <img
-            className="max-w-[100%]  relative my-0 shrink-0  z-[1] top-[15px]"
-            alt="Dr Francisco Rodriguez"
-            src="/frame-79.png"
-          />
-        </div> */}
+       
       </motion.div>
     </section>
   );

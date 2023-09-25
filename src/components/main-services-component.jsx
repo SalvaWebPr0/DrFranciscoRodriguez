@@ -6,6 +6,7 @@ import ServiceSlider from "./ServiceSlider";
 import Circles from "./Circles";
 import Bulb from "./Bulb";
 import ServiceSlider3D from "./ServiceSliderTwo";
+import Image from "next/image";
 
 
 const MainServicesComponent = () => {
@@ -50,7 +51,7 @@ const MainServicesComponent = () => {
                     <h4 className="m-0  top-[14.5px] left-[25px] text-[24px] sm:text-[18px] pr-5 font-medium font-barlow-condensed text-gray-white text-center inline-block ">
                       Solicitar consulta
                     </h4>
-                    <img
+                    <Image width={30} height={30}
                       className="w-[30.5px] sm:w-[25.5px] h-full object-cover"
                       alt=""
                       src="/arrow-5.png"

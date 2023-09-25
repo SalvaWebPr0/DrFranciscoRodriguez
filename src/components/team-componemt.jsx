@@ -1,6 +1,7 @@
 import AnimatedText from "./AnimatedText";
 import { motion } from "framer-motion";
 import ContactForm from "./ContactForm";
+import Image from "next/image";
 
 const TeamComponemt = () => {
   return (
@@ -14,14 +15,24 @@ const TeamComponemt = () => {
       </motion.div>
       
       <ContactForm/>
-      <motion.img
+      <motion.div
         initial={{y:30, opacity:0 }} 
         whileInView={{y:0, opacity: 1 }} 
         transition={{duration: 0.7}}
-        className="relative max-w-full"
+        className="w-full relative "
+      >
+        <Image 
+        width={2000}
+        height={700}
+        quality={100}
+        sizes="(max-width: 768px) 100vw"
+        style={{objectFit: "contain"}}
+        className="relative max-w-full md:max-h-[300px]"
         alt=""
         src="/undefined3.png"
       />
+      </motion.div>
+      
      
       <motion.h4 
         initial={{y:30, opacity:0 }} 
@@ -34,7 +45,7 @@ const TeamComponemt = () => {
       </motion.h4>
       <div className="mt-11 sm:mt-[80px] sm: h-[25px] flex flex-row md:flex-col py-10 px-[0.44140625px] box-border items-center justify-center gap-[53px] text-left text-mid text-darkgray-300">
         <div className="relative h-[25px]">
-          <img
+          <Image width={20} height={20}
             className="absolute top-[0px] left-[0px] w-[19.96px] h-[20.84px]  object-cover"
             alt=""
             src="/frame.png"
@@ -44,7 +55,7 @@ const TeamComponemt = () => {
           </div>
         </div>
         <div className="relative h-[25px]">
-          <img
+          <Image width={20} height={20}
             className="absolute top-[0px] left-[0px] w-[19.96px] h-[20.84px]  object-cover"
             alt=""
             src="/frame.png"
@@ -54,7 +65,7 @@ const TeamComponemt = () => {
           </div>
         </div>
         <div className="relative h-[25px]">
-          <img
+          <Image width={20} height={20}
             className="absolute top-[0px] left-[0px] w-[19.96px] h-[20.84px]  object-cover"
             alt=""
             src="/frame.png"

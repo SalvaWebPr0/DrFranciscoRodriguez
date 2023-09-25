@@ -4,6 +4,7 @@ import AnimatedText from "./AnimatedText";
 import { FreeMode ,Navigation, Pagination, EffectCoverflow } from 'swiper/modules';
 import { PiCaretLeftLight, PiCaretRightLight } from "react-icons/pi";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 import 'swiper/css';
 import 'swiper/css/effect-coverflow';
@@ -86,7 +87,7 @@ const TestimonialsComponent = () => {
                       
                         <div className="p-5 flex flex-col relative top-[30.34px] rounded-lgi bg-gray-400 w-[98%] text-dimgray-200">
                         <div className="rate flex-row">
-                            <img
+                            <Image width={200} height={20} quality={100}
                               className="relative flex flex-row top-[21.94px] left-[17.37px] w-[146.29px] h-[32.91px] object-cover"
                               alt=""
                               src="/stars1.png"
@@ -103,7 +104,7 @@ const TestimonialsComponent = () => {
                         </div>
                           
                           <div className="author flex flex-row">
-                            <img
+                            <Image width={50} height={50} quality={100}
                               className="flex flex-row pl-3 w-[52.11px] h-[52.11px] object-cover mr-4"
                               alt=""
                               src="/testimonial-1-avatar.png"

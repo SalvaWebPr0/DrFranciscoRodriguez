@@ -1,4 +1,5 @@
 import { useMemo } from "react";
+import Image from "next/image";
 
 const ServiceCard = ({
   procedureName,
@@ -41,7 +42,7 @@ const ServiceCard = ({
       <div className="self-stretch flex flex-row items-center justify-between text-4xs">
         <div className="self-stretch w-[324px] flex flex-row py-0 px-2.5 box-border items-start justify-start gap-[17px]">
           <div className="flex flex-row items-center justify-start gap-[4.35px]">
-            <img
+            <Image width={15} height={15}
               className="relative w-[14.12px] h-[14.01px] object-cover"
               alt=""
               src={dimension}
@@ -49,7 +50,7 @@ const ServiceCard = ({
             <div className="relative leading-[16.27px] font-medium">4</div>
           </div>
           <div className="flex flex-row items-center justify-start gap-[4.35px]">
-            <img
+            <Image width={15} height={15}
               className="relative w-[13.17px] h-[13.16px] object-cover"
               alt=""
               src={imageDimension}
@@ -61,7 +62,7 @@ const ServiceCard = ({
         </div>
         <div className="flex flex-row items-start justify-start gap-[8.71px] text-center text-[11.61px]">
           <div className="rounded-[1.45px] bg-black w-[23px] h-6 flex flex-row p-[2.902620315551758px] box-border items-center justify-center">
-            <img
+            <Image width={15} height={15}
               className="relative w-[14.51px] h-[14.51px] object-cover"
               alt=""
               src={procedureDescription}

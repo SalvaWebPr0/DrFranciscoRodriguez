@@ -4,6 +4,7 @@ import { motion } from 'framer-motion'
 import { useState } from 'react'
 import { sendEmail } from './sendEmail'
 import { POST } from '@/app/api/send/route'
+import Image from 'next/image'
 
 const ContactForm = ({className}) => {
 
@@ -49,8 +50,9 @@ const ContactForm = ({className}) => {
               <h4 className="m-0  top-[14.5px] left-[25px] text-[24px] sm:text-[18px] pr-5 font-medium font-barlow-condensed text-gray-white text-center inline-block ">
                 Solicitar consulta
               </h4>
-              <img
+              <Image
                 className="w-[30.5px] sm:w-[25.5px] h-full object-cover"
+                width={30} height={30}
                 alt=""
                 src="/arrow-5.png"
               />

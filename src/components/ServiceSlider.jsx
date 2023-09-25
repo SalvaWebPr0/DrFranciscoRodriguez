@@ -100,10 +100,10 @@ const ServiceSlider = () => {
                 <div className='h-[100%] inline-block align-middle px-4 py-20 lg:py-10 relative'>
                   <div className='relative z-10 mx-auto my-0 font-playfair-display text-5xl'>{item.title}</div>
                   <p className='relative z-10 text-base font-sans font-light'>{item.description}</p>
-                  <a className='
+                  <Link href={`/`} className='
                     relative z-10 bg-black border-none text-white px-5 py-2 text-center inline-block m-auto cursor-pointer text-sm'>
                     Saber Mas...
-                  </a>
+                  </Link>
                   <div className='p-5 z-0 object-cover text-mid '>
                     {item.backimage}
                   </div>

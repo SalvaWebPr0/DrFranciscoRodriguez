@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 const BenefitCard = ({
   tecnologiaDePunta,
@@ -12,7 +13,7 @@ const BenefitCard = ({
         transition={{duration: 0.7}} 
     className="w-[33%] md:w-full sm:w-[80%] flex flex-row pt-10 px-3 md:px-10 sm:px-2 pb-10 box-border items-center justify-start gap-[10px] text-left text-gray-200 sm:ml-8 font-playfair-display">
       <div className="relative h-full">
-        <img className="-left-4 absolute w-3 h-3 object-cover" alt="" src={ellipse13} />
+        <Image className="-left-4 absolute w-3 h-3 object-cover" alt="" width={30} height={30} src={ellipse13} />
       </div>
     
       <div className="flex flex-col ">
