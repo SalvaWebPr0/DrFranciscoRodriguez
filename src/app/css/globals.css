@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display+SC:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Epilogue:wght@400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;600&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body {
+  @apply leading-[normal] m-0;
+}
+*,
+::before,
+::after {
+  border-width: 0;
+}
+
+@layer components {
+  /* Logon Button Class  */
+  .loginRegDiv {
+      @apply gap-x-1 px-2 bg-[#f8f8f8] text-gray-500 flex items-center py-1.5 rounded-full hover:bg-white border-[1px] border-gray-200 hover:border-orange-500 duration-200 cursor-pointer;
+  }
+
+  /* Logon Button Class  */
+  .cartDiv {
+      @apply gap-x-1 px-2 bg-black hover:bg-slate-950 text-slate-100 flex items-center py-1.5 rounded-full hover:text-white justify-center border-[1px] border-black hover:border-orange-500 duration-200 relative;
+  }
+
+  /* Social Icons */
+  .socialLink {
+      @apply bg-slate-100 p-1 text-darkText inline-flex items-center justify-center rounded-md text-lg hover:bg-orange-600 hover:text-white cursor-pointer duration-200;
+    }
+
+    /* Input Fields */
+  .inputFields {
+    @apply border rounded border-yellow-600 text-white font-normal pl-5 font-barlow-condensed text-base bg-[transparent] relative h-[68px];
+  }
+
+  a {
+    @apply hover:bg-gradient-to-r hover:from-amber-400 hover:to-amber-300 hover:bg-clip-text hover:text-transparent;
+  }
+
+}
+
+.button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
