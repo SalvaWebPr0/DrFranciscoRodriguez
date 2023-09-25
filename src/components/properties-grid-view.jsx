@@ -1,7 +1,6 @@
 import "antd/dist/antd.min.css";
 import { Dropdown, Menu } from "antd";
 import { DownOutlined } from "@ant-design/icons";
-import NavigationRight from "./navigation-right";
 import ServiceCard from "./service-card";
 import Image from "next/image";
 import Link from "next/link";
@@ -11,7 +10,6 @@ const PropertiesGridView = () => {
     <div className="bg-gray-white w-[1920px] flex flex-col items-start justify-start text-center text-[52px] text-gray-white font-playfair-display">
       <header className="self-stretch bg-gray-600 h-[152px] flex flex-row py-[22px] px-20 box-border items-center justify-center sticky w-full top-[0] [background:white] z-[2] lg:pl-10 lg:pr-10 lg:box-border md:pl-6 md:pr-6 md:box-border">
         <div className="flex-1 rounded-3xs bg-gray-500 flex flex-row py-2.5 px-5 items-center justify-between">
-          <NavigationRight />
         </div>
       </header>
       <div className="self-stretch h-[336px] flex flex-col items-center justify-center bg-[url('/category@3x.png')] bg-cover bg-no-repeat bg-[top]">

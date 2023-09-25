@@ -1,11 +1,11 @@
 import React, { useState } from 'react'
-import styles from './style.module.scss';
+import styles from '@/components/header/nav/style.module.scss';
 import { motion } from 'framer-motion';
 import { usePathname } from 'next/navigation';
-import { menuSlide } from '../anim';
-import Link from './Link';
-import Curve from './Curve';
-import Footer from './Footer';
+import { menuSlide } from '@/components/header/anim';
+import Link from '@/components/header/nav/Link';
+import Curve from '@/components/header/nav/Curve';
+import Footer from '@/components/header/nav/Footer';
 
 const navItems = [
   {
@@ -34,7 +34,7 @@ const navItems = [
   },
 ]
 
-export default function index() {
+export default function Navi() {
 
   const pathname = usePathname();
   const [selectedIndicator, setSelectedIndicator] = useState(pathname);

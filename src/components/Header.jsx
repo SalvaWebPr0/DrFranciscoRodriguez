@@ -1,7 +1,7 @@
 'use client'
 import styles from './header/style.module.scss'
 import { useEffect, useState } from 'react';
-import Nav from '@/components/header/nav'
+import Navi from './Nav';
 import { AnimatePresence } from 'framer-motion';
 import { usePathname } from 'next/navigation';
 
@@ -26,7 +26,7 @@ export default function HeaderMain() {
 
     </div>
     <AnimatePresence mode="wait">
-      {isActive && <Nav />}
+      {isActive && <Navi />}
     </AnimatePresence>
     </>
   )
