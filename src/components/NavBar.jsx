@@ -3,7 +3,8 @@ import React from 'react'
 import Link from 'next/link'
 import { useRouter } from 'next/navigation'
 import { RxHamburgerMenu } from 'react-icons/rx'
-import Header from './header'
+import HeaderFirst from './header'
+import HeaderMain from './Header'
 import Image from 'next/image'
 
 const CustomLink = ({href, title, className=""}) => {
@@ -38,7 +39,7 @@ const NavBar = () => {
             <CustomLink href="/contacto" title={`CONTACTO`} className='text-gray-white no-underline' />
         </nav>
         <div >
-          <Header className='hidden md:block'/>
+          <HeaderMain className='hidden md:block'/>
         </div>
 
     </header>

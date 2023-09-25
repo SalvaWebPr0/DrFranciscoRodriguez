@@ -118,8 +118,8 @@ const TestimonialsComponent = () => {
                               </div>
                           </div>
                           </div>
-                          <h1 className="m-0 absolute bottom-5 right-5 text-231xl leading-[68.5%] font-bold font-playfair-display-sc text-center inline-block w-[95.09px] h-[85.03px]">
-                            "
+                          <h1 className="m-0 absolute bottom-5 right-5 text-53xl leading-[68.5%] font-medium text-center inline-block w-[95.09px] h-[85.03px]">
+                            <span className="font-poppins">❞</span>
                           </h1>
                         </div>
                       </div>

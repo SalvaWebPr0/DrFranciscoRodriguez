@@ -1,11 +1,11 @@
 'use client'
-import styles from './style.module.scss'
+import styles from './header/style.module.scss'
 import { useEffect, useState } from 'react';
-import Nav from './nav';
+import Nav from '@/components/header/nav'
 import { AnimatePresence } from 'framer-motion';
 import { usePathname } from 'next/navigation';
 
-export default function HeaderFirst() {
+export default function HeaderMain() {
 
   const [isActive, SetIsActive] = useState(false);
   const pathname = usePathname();

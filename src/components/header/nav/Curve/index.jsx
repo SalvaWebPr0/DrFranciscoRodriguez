@@ -22,8 +22,8 @@ export default function Index() {
   }
 
   return (
-    <svg className={styles.svgCurve}>
-        <motion.path variants={curve} initial="initial" animate="enter" exit="exit"></motion.path>
+    <svg className={`${styles.svgCurve}`}>
+        <motion.path variants={curve} className={`bg-sendblack`} initial="initial" animate="enter" exit="exit"></motion.path>
     </svg>
   )
 }
